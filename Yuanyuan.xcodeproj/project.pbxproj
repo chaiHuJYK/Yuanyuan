@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B43644ED0C4DFF92B9C4EFE6 /* libPods-Yuanyuan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C02BDCE098E86580EC33BB /* libPods-Yuanyuan.a */; };
 		BE0A03521EC4443D00BE911E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A03511EC4443D00BE911E /* AppDelegate.swift */; };
 		BE0A03591EC4443D00BE911E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0A03581EC4443D00BE911E /* Assets.xcassets */; };
 		BE0A035C1EC4443D00BE911E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0A035A1EC4443D00BE911E /* LaunchScreen.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11C02BDCE098E86580EC33BB /* libPods-Yuanyuan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Yuanyuan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3C8548BEA611F7D7B0ECF6 /* Pods-Yuanyuan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yuanyuan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yuanyuan/Pods-Yuanyuan.debug.xcconfig"; sourceTree = "<group>"; };
 		BE0A034E1EC4443D00BE911E /* Yuanyuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yuanyuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0A03511EC4443D00BE911E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE0A03581EC4443D00BE911E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		BE0A03871EC44A8600BE911E /* IMG_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_7.jpg; sourceTree = "<group>"; };
 		BE0A03881EC44A8600BE911E /* IMG_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8.jpg; sourceTree = "<group>"; };
 		BE0A039B1EC58CD500BE911E /* ACellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACellView.swift; sourceTree = "<group>"; };
+		F65EA078079BCC8870C59776 /* Pods-Yuanyuan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yuanyuan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yuanyuan/Pods-Yuanyuan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43644ED0C4DFF92B9C4EFE6 /* libPods-Yuanyuan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11A588DB2FC1BF79468FF239 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11C02BDCE098E86580EC33BB /* libPods-Yuanyuan.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4700B3AB474FB48CC8CE9479 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C8548BEA611F7D7B0ECF6 /* Pods-Yuanyuan.debug.xcconfig */,
+				F65EA078079BCC8870C59776 /* Pods-Yuanyuan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BE0A03451EC4443D00BE911E = {
 			isa = PBXGroup;
 			children = (
 				BE0A03501EC4443D00BE911E /* Yuanyuan */,
 				BE0A034F1EC4443D00BE911E /* Products */,
+				4700B3AB474FB48CC8CE9479 /* Pods */,
+				11A588DB2FC1BF79468FF239 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE0A03601EC4443D00BE911E /* Build configuration list for PBXNativeTarget "Yuanyuan" */;
 			buildPhases = (
+				1C63639BB1B7B219AC0A616F /* [CP] Check Pods Manifest.lock */,
 				BE0A034A1EC4443D00BE911E /* Sources */,
 				BE0A034B1EC4443D00BE911E /* Frameworks */,
 				BE0A034C1EC4443D00BE911E /* Resources */,
+				6363CD13D95BCE5308BBD481 /* [CP] Embed Pods Frameworks */,
+				1523993B3F763772AD0AC0E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,6 +212,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1523993B3F763772AD0AC0E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yuanyuan/Pods-Yuanyuan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C63639BB1B7B219AC0A616F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6363CD13D95BCE5308BBD481 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yuanyuan/Pods-Yuanyuan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE0A034A1EC4443D00BE911E /* Sources */ = {
@@ -304,6 +379,7 @@
 		};
 		BE0A03611EC4443D00BE911E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC3C8548BEA611F7D7B0ECF6 /* Pods-Yuanyuan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Yuanyuan/Info.plist;
@@ -316,6 +392,7 @@
 		};
 		BE0A03621EC4443D00BE911E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F65EA078079BCC8870C59776 /* Pods-Yuanyuan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Yuanyuan/Info.plist;
